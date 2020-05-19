@@ -1,0 +1,51 @@
+<!-- By: Mohammed LAACHACH
+  mail : mohamed.laachach@outlook.fr
+simple HTML web page to show data from csv file -->
+
+<!DOCTYPE html>
+<head>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    </head>
+
+    <body>
+        <h2>Data from Database</h2>
+        {% if data %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Timestamp</th>
+                        <th>Temperature</th>
+                        <th>Duration</th>
+                      </tr>
+                </thead>
+            {% for d in data %}
+                    <tr>
+                        <td>{{d.id}}</td>
+                        <td>{{d.timestamp}}</td>
+                        <td>{{d.temperature}}</td>
+                        <td>{{d.duration}}</td>
+                    </tr>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p>No data are available.</p>
+        {% endif %}
+        
+    </body>
