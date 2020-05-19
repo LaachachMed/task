@@ -1,0 +1,8 @@
+- I used Django Framework to create this application for 2 main reasons:
+*1st one for the data migration which is very useful to synchronize models with database and that helps us to gain time and avoid complexity.
+*2nd one is to create a simple web page using html rendered on python.
+- It will be easy also to do that using for the front Angular for showing the data using APIs created with python.
+
+
+- I hope that I've understand and complete the whole needed tasks.
+- If there's any question please message me : mohamed.laachach@outlook.fr
