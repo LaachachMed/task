@@ -1,8 +1,12 @@
 from django.shortcuts import render
+
+from django.http import JsonResponse
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from .models import task_data
 from django.http import HttpResponse
+from django.shortcuts import render
+from django.template import loader
 import pandas as pd
 # Create your views here.
 
